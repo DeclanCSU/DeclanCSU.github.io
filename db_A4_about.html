@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+  db_A4_about.html
+  Declan Bannerman, April 2026
+  about me page for my portfolio themed around RUNEVINE STUDIOS
+  A3: internal stylesheet removed, nav buttons, favicon, logo, print css, copyright footer added
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Declan Bannerman &ndash; RUNEVINE STUDIOS</title>
+
+  <!-- shared styles across all of the pages -->
+  <!-- A3: favicon that appears on the browser tab -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <!-- the same header structure across all four of the pages -->
+  <header>
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <!-- A3: logo image in nav -->
+        <img src="images/logo.svg" alt="RUNEVINE STUDIOS logo" class="site-logo">Runevine Studios
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="db_A4_about.html" class="active">About</a></li>
+        <li><a href="db_A4_resume.html">Resume</a></li>
+        <li><a href="db_A4_web_skills.html">Web Skills</a></li>
+        <li><a href="db_A4_cybersecurity_skills.html">Cyber Skills</a></li>
+        <li><a href="db_A4_problem_solving_skills.html">Troubleshooting Skills</a></li>
+        <li><a href="db_A4_communication_skills.html">Communication Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- the hero is slightly smaller on the inner pages thus adjusted with  inline style on the h1 -->
+  <!-- A3: .hero-inner reduces padding instead of inline style on h1 -->
+  <section class="hero hero-inner">
+    <h1>About Me</h1>
+    <p>Getting to know the developer behind the code.</p>
+  </section>
+
+  <main>
+
+    <!-- for bio, two column layout using .bio-layout. already defined in style block above. -->
+    <div class="section-block">
+      <h2>Who I Am</h2>
+      <div class="bio-layout card">
+        <!-- left column for photo and name -->
+        <div>
+          <!-- the profile photo whic is hidden if the file is missing -->
+          <img src="images/profile.png"
+               alt="Declan Bannerman professional headshot"
+               class="profile-img"
+               onerror="this.style.display='none'">
+          <!-- A3: .bio-name and .bio-subtitle replace inline styles -->
+          <p class="bio-name"><span class="accent">Declan Bannerman</span></p>
+          <p class="bio-subtitle">CS Student, Canberra</p>
+        </div>
+        <!-- the right column, the bio paragraphs as well as the tags -->
+        <div>
+          <p class="left">I&rsquo;m <span class="highlight">Declan Bannerman</span>,
+             a 22 year old Bachelor of Computer Science student at Charles Sturt
+             University. Currently based in Canberra, ACT. Originally from Coffs Harbour. I
+             moved to Canberra for work after completing my prior IT qualifications at
+             TAFE NSW.</p>
+
+          <p class="justify">I bring practical IT industry experience from my time as
+             a Service Desk Agent at Datacom. Alongside that I also bring professional certifications
+             in cybersecurity from both Google and IBM. I am analytical as well as methodical
+             by nature with an easy going temperament that keeps me steady under
+             pressure. The games industry has always fascinated me. I had spent
+             time as a teenager trying to build a Resident evil styled game before
+             realising just how deep that rabbit hole goes. Now that time has passed and I've grown professionaly, I want to reapproach
+             it with the right foundation.</p>
+
+          <!-- quote right aligned -->
+          <p class="right">
+            <em class="italic-note">&ldquo;Analytical by nature,
+            easy going by choice.&rdquo;</em>
+          </p>
+
+          <!-- skill tags using the span elements -->
+          <div class="tags-row">
+            <span class="tag">Networking</span>
+            <span class="tag">Cyber Skills</span>
+            <span class="tag">IT Support</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Active Directory</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- the background section which lists my story as well as interweaving credentials a little bit -->
+    <div class="section-block">
+      <h2>My Background</h2>
+      <div class="card">
+        <p class="left">I grew up in Coffs Harbour and have completed IT qualifications
+           at TAFE NSW. Those being a Diploma in IT (Cybersecurity) as well as a Certificate IV in
+           Networking, which gave me a grounded understanding of both security
+           principles and practical infrastructure work.</p>
+        <p class="left">In early 2025 I relocated to Canberra for a role as a
+           Service Desk Agent at Datacom wherein I handled technical support across
+           phone, email, and chat. I am now channelling that hands&#8209;on experience
+           into my Computer Science degree at CSU, having entered with six months worth of recognised
+           credit. My father&rsquo;s background in tiling has also given me an early
+           appreciation for precision. The kind where there is no hiding a mistake
+           once the job is done.</p>
+      </div>
+    </div>
+
+    <!-- my interests and goals in unordered and ordered lists both live here -->
+    <div class="section-block">
+      <h2>Interests &amp; Hobbies</h2>
+      <div class="card">
+        <h3>Outside the terminal</h3>
+        <!-- square bullets that are set in portfolio.css -->
+        <ul class="content-list">
+          <li>Mountain biking on trails around Canberra</li>
+          <li>Mixed martial arts training</li>
+          <li>First person shooter video games</li>
+          <li>Warfare history and military strategy</li>
+          <li>Taxidermy as a craft and natural science hobby</li>
+          <li>Following developments in humanoid robotics and other emerging technologies</li>
+        </ul>
+
+        <h3>Goals for 2026</h3>
+        <!-- roman numerals also set in portfolio.css -->
+        <ol class="content-list">
+          <li>Get stronger at building things not just understanding them</li>
+          <li>Find more time for my hobbies outside of study</li>
+          <li>Make meaningful progress on a personal project outside of my coursework</li>
+          <li>Land a role or internship that genuinely interests me in the tech or games space</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- the values grid wherein each card is a .value-item. from the internal style block. -->
+    <div class="section-block">
+      <h2>My Values</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>Precision</h3>
+          <p>Whether it is code or a support ticket, getting
+             the details right matters a lot. I take care in what i produce.</p>
+        </div>
+        <div class="value-item">
+          <h3>Analytical Thinking</h3>
+          <p>I break problems down methodically before acting, as jumping to
+             conclusions wastes time and creates new problems.</p>
+        </div>
+        <div class="value-item">
+          <h3>Reliability</h3>
+          <p>People in IT support depend on you to show up and follow
+             through. I take that expectation very seriously.</p>
+        </div>
+        <div class="value-item">
+          <h3>Curiosity</h3>
+          <p>From humanoid robotics to taxidermy, I am genuinely
+             interested in how things work and why they have been built the way
+             they are.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- for contact, my email and phone links. plus an internal link to go back to  the resume page -->
+    <div class="section-block">
+      <h2>Contact</h2>
+      <div class="card">
+        <ul class="content-list">
+          <li>Email: <a href="mailto:declan.bannerman04@outlook.com">declan.bannerman04@outlook.com</a></li>
+          <li>Phone: <a href="tel:+61422414399">0422 414 399</a></li>
+          <!-- the internal link -->
+          <li>View my <a href="db_A4_resume.html">full resume</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Declan Bannerman | RUNEVINE STUDIOS Portfolio 
+       <a href="mailto:declan.bannerman04@outlook.com">declan.bannerman04@outlook.com</a>
+    </p>
+    <!-- A3: copyright and permissions notice -->
+    <p class="footer-copyright">
+      All written content, code, and design on this site is original work
+      &copy; 2026 Declan Bannerman. All content is owned by the copyright holder.
+    </p>
+      <p class="footer-newsletter"><a href="db_A4_newsletter_form.html" target="_blank">Subscribe to the RUNEVINE STUDIOS Newsletter &rarr;</a></p>
+  </footer>
+
+</body>
+</html>
